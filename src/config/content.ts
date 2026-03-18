@@ -10,8 +10,7 @@ export const siteConfig = {
   subtitle: "Workshop on AI for Safe Surgery",
   conference: "MICCAI 2026 Satellite Workshop",
   date: "October 4/8, 2026",
-  description:
-    "Bringing together researchers, clinicians, industry, and regulatory partners to address safety across the data-to-deployment pipeline in surgical AI.",
+  description: "",
 
   // Twitter / X feed configuration
   twitter: {
