@@ -138,7 +138,6 @@ export const siteConfig = {
     { date: "August 31, 2026", label: "Camera-ready submissions due", status: "upcoming" as const },
     { date: "October 4/8, 2026", label: "SafeSurg Workshop day", status: "upcoming" as const },
   ] as Array<{ date: string; label: string; status: "upcoming" | "done" }>,
-  ],
 
   program: [
     { time: "11:45 – 12:00", title: "Introduction", speaker: "Dr. Lalith Sharan", type: "talk" as const },
