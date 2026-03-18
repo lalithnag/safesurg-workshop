@@ -24,7 +24,7 @@
     --muted: 214 32% 97%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 174 84% 32%;
+    --accent: 217 91% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,7 +32,7 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 174 84% 32%;
+    --ring: 217 91% 50%;
 
     --radius: 0.5rem;
 
@@ -81,7 +81,7 @@
   }
 
   .gradient-accent {
-    background: linear-gradient(135deg, hsl(174 84% 32%), hsl(174 60% 42%));
+    background: linear-gradient(135deg, hsl(217 91% 50%), hsl(217 70% 60%));
   }
 
   .text-gradient {

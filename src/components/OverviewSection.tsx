@@ -1,24 +1,20 @@
 import { siteConfig } from "@/config/content";
 import FadeInSection from "@/components/FadeInSection";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
+
+const SUBMIT_ACTIVE_DATE = new Date("2026-04-01T00:00:00");
 
 const OverviewSection = () => {
   const { overview } = siteConfig;
   const [openTopic, setOpenTopic] = useState<number | null>(0);
+  const isSubmitActive = new Date() >= SUBMIT_ACTIVE_DATE;
 
   return (
     <section id="overview" className="section-padding">
       <div className="mx-auto max-w-7xl">
-        <FadeInSection>
-          <h2 className="text-3xl font-bold tracking-tight text-primary">
-            Overview &amp; Call for Papers
-          </h2>
-          <div className="mt-2 h-1 w-12 rounded-full bg-accent" />
-        </FadeInSection>
-
-        {/* Overview paragraphs */}
-        <div className="mt-10 max-w-3xl space-y-5">
+        {/* Description paragraphs — full width, no title */}
+        <div className="space-y-5">
           {overview.intro.map((p, i) => (
             <FadeInSection key={i} delay={i * 0.06}>
               <p className="text-base leading-relaxed text-muted-foreground">{p}</p>
@@ -33,6 +29,26 @@ const OverviewSection = () => {
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               {overview.cfpIntro}
             </p>
+            <div className="mt-5">
+              {isSubmitActive ? (
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 rounded-md gradient-accent px-6 py-3 text-sm font-semibold text-accent-foreground shadow-md transition-transform hover:scale-[1.02]"
+                >
+                  <ExternalLink size={16} />
+                  Submit Paper
+                </a>
+              ) : (
+                <button
+                  disabled
+                  className="inline-flex items-center gap-2 rounded-md bg-muted px-6 py-3 text-sm font-semibold text-muted-foreground cursor-not-allowed opacity-60"
+                  title="Submissions open April 1, 2026"
+                >
+                  <ExternalLink size={16} />
+                  Submissions open April 1
+                </button>
+              )}
+            </div>
           </div>
         </FadeInSection>
 
