@@ -137,6 +137,7 @@ export const siteConfig = {
     { date: "July 31, 2026", label: "Notification of paper decisions", status: "upcoming" as const },
     { date: "August 31, 2026", label: "Camera-ready submissions due", status: "upcoming" as const },
     { date: "October 4/8, 2026", label: "SafeSurg Workshop day", status: "upcoming" as const },
+  ] as Array<{ date: string; label: string; status: "upcoming" | "done" }>,
   ],
 
   program: [
