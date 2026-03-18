@@ -47,7 +47,7 @@ export const siteConfig = {
 
   navLinks: [
     { label: "News", href: "#news" },
-    { label: "Overview & CFP", href: "#overview" },
+    { label: "About", href: "#overview" },
     { label: "Timeline", href: "#timeline" },
     { label: "Program", href: "#program" },
     { label: "Team", href: "#team" },
