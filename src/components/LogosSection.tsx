@@ -1,11 +1,13 @@
 import FadeInSection from "@/components/FadeInSection";
 
+const base = import.meta.env.BASE_URL;
+
 const logos = [
   { name: "IHU Strasbourg", src: "https://www.ihu-strasbourg.eu/wp-content/uploads/2024/02/logo_ihu_en_3.svg", wide: false },
-  { name: "University of Strasbourg", src: "/logos/Universität_Straßburg_logo.svg.png", wide: false },
-  { name: "European Research Council", src: "/logos/LOGO-ERC.png", wide: false },
+  { name: "University of Strasbourg", src: `${base}logos/Universität_Straßburg_logo.svg.png`, wide: false },
+  { name: "European Research Council", src: `${base}logos/LOGO-ERC.png`, wide: false },
   { name: "University College London", src: "https://cdn.ucl.ac.uk/logos/ucl/ucl-logo--primary.svg", wide: false },
-  { name: "Chinese University of Hong Kong", src: "/logos/CUHK_7bbbc2a3e2.png", wide: false },
+  { name: "Chinese University of Hong Kong", src: `${base}logos/CUHK_7bbbc2a3e2.png`, wide: false },
   { name: "Samsung Robotics Institute", src: "https://cdn.codeground.org/nsr/images/layout/logo-sr.png", wide: false },
   { name: "Policlinico Gemelli", src: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo-policlinico-gemelli_nuovo.png", wide: false },
 ];

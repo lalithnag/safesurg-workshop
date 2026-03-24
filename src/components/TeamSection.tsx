@@ -15,7 +15,7 @@ const TeamSection = () => (
             <div className="flex flex-col items-center gap-3 text-center">
               <div className="h-20 w-20 overflow-hidden rounded-full bg-accent/10">
                 <img
-                  src={member.photo}
+                  src={`${import.meta.env.BASE_URL}${member.photo.replace(/^\//, "")}`}
                   alt={member.name}
                   className="h-full w-full object-cover"
                 />
