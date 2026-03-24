@@ -1,4 +1,4 @@
-# SafeSurg — Workshop on AI for Safe Surgery
+# SafeSurg: Workshop on AI for Safe Surgery
 
 Website for the SafeSurg satellite workshop at MICCAI 2026.
 
